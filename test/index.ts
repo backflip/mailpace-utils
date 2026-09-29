@@ -1,7 +1,7 @@
 import test from "node:test";
 import assert from "node:assert";
 import { generateKeyPairSync, sign } from "node:crypto";
-import { verifySignature } from "../index.ts";
+import { verifySignature } from "../src/index.ts";
 
 test("detects correct signature", async (t) => {
   const { publicKey, privateKey } = generateKeyPairSync("ed25519");
