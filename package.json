@@ -1,10 +1,11 @@
 {
   "name": "mailpace-utils",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Utilities like webhook signature verification for MailPace",
   "author": "Thomas Jaggi <thomas@responsive.ch>",
   "type": "module",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "license": "Apache-2.0",
   "repository": "backflip/mailpace-utils",
   "engines": {

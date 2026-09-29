@@ -5,6 +5,7 @@
     "rewriteRelativeImportExtensions": true,
     "erasableSyntaxOnly": true,
     "verbatimModuleSyntax": true,
+    "declaration": true,
     "types": ["node"],
     "outDir": "dist",
     "rootDir": "src"
