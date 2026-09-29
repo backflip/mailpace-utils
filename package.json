@@ -5,7 +5,7 @@
   "author": "Thomas Jaggi <thomas@responsive.ch>",
   "type": "module",
   "main": "index.ts",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": "backflip/mailpace-utils",
   "engines": {
     "node": ">=22.18.0"
