@@ -6,8 +6,8 @@ export function verifySignature({
   publicKey,
 }: {
   payload: Buffer;
-  signature: Buffer;
-  publicKey: KeyObject | string;
+  signature: string; // base64 encoded
+  publicKey: KeyObject | string; // base64 encoded
 }) {
   const key =
     publicKey instanceof KeyObject
@@ -21,7 +21,7 @@ export function verifySignature({
           type: "spki",
         });
 
-  const isValid = verify(null, payload, key, signature);
+  const isValid = verify(null, payload, key, Buffer.from(signature, "base64"));
 
   return isValid;
 }

@@ -14,8 +14,8 @@ import { verifySignature } from "mailpace-utils";
 
 const publicKeyBase64 = process.env.MAILPACE_PUBLIC_KEY; // Copy from MailPace dashboard
 
-const message = ``; // raw request body
-const signature = ``; // `x-mailpace-signature` request header
+const message = <Buffer>; // raw request body
+const signature = ""; // `x-mailpace-signature` request header
 
 const isValid = verifySignature({ message, signature, publicKey });
 

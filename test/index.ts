@@ -20,7 +20,7 @@ test("detects correct signature", async (t) => {
 
   const isValid = verifySignature({
     payload: Buffer.from(JSON.stringify(payload)),
-    signature,
+    signature: signature.toString("base64"),
     publicKey,
   });
 
@@ -38,7 +38,7 @@ test("detects incorrect signature", async (t) => {
 
   const isInvalid = verifySignature({
     payload: Buffer.from(JSON.stringify(payload)),
-    signature: Buffer.from("invalid"),
+    signature: "invalid",
     publicKey,
   });
 
