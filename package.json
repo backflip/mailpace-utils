@@ -1,0 +1,21 @@
+{
+  "name": "mailpace-utils",
+  "version": "1.0.0",
+  "description": "Utilities like webhook signature verification for MailPace",
+  "author": "Thomas Jaggi <thomas@responsive.ch>",
+  "type": "module",
+  "main": "index.ts",
+  "license": "MIT",
+  "repository": "backflip/mailpace-utils",
+  "engines": {
+    "node": ">=22.18.0"
+  },
+  "scripts": {
+    "test": "node --test test/*",
+    "typecheck": "tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^24.19.0",
+    "typescript": "^7.0.2"
+  }
+}
